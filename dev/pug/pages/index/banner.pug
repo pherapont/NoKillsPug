@@ -1,0 +1,23 @@
+.banner
+	.slaider-main
+		.swiper-wrapper
+			.swiper-slide(style="background-image: url('static/images/general/banner-slider/1.jpg')")
+			.swiper-slide(style="background-image: url('static/images/general/banner-slider/2.jpg')")
+			.swiper-slide(style="background-image: url('static/images/general/banner-slider/3.jpg')")
+		.swiper-control
+			.swiper-button.swiper-button--prev
+				+icon('angle-left','swiper-button__icon')
+				span.swiper-button__text prev
+			.swiper-pagination
+			.swiper-button.swiper-button--next
+				+icon('angle-right','swiper-button__icon')
+				span.swiper-button__text next
+	.banner__content
+		h1.banner__title Wild Animal
+		.banner__label
+			img(src="static/images/general/title.png").banner__label-image
+		a.btn.btn--black
+			span.btn__text Join Conferences
+			+icon('angle-right','btn__arrow') 
+	a(href="").scroll-down
+		+icon('chevron-down','scroll-down__icon')

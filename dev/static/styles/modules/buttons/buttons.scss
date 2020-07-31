@@ -1,0 +1,52 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	border: solid 3px $black;
+	border-radius: 10px;
+	background-color: #f7df5a;
+	color: $black;
+	text-transform: uppercase;
+	line-height: 1;
+	font-family: $main-font;
+	font-size: 25px;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.3s ease 0s;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 3px;
+		height: 100%;
+		top: 0;
+		right: 48px;
+		bottom: 0;
+		background-color: $black;
+	}
+	&__text {
+		padding: 12px 50px 12px 22px;
+	}
+	&__arrow {
+		fill: $black;
+		width: 14px;
+		height: 20px;
+		margin-right: 20px;
+		transition: all 0.3s ease 0.3s;
+	}
+	&:hover {
+		transform: scale(1.03);
+	}
+	&.btn {
+		&--black {
+			color: $accent;
+			background-color: rgba($black, 0.5);
+			border-color: $accent;
+			&::after {
+				background-color: $accent;
+			}
+			.btn__arrow { 
+				fill: $accent;
+			}
+		}
+	}
+}

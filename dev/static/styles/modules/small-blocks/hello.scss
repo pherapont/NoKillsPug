@@ -1,0 +1,55 @@
+.s-hello {
+	position: relative;
+	background: linear-gradient(to top, rgba(0,0,0, .7), rgba(0,0,0,.7)), url(../images/content/hello/bg1.jpg) right/contain no-repeat, url(../images/content/hello/bg2.jpg) left/contain no-repeat;
+}
+
+.hello {
+	position: relative;
+	z-index: 5;
+	padding: 20% 0px 20% 0px;
+	&__body {
+		max-width: 570px;
+		margin-left: auto;
+		background-color: $accent;
+		padding: 90px 40px;
+	}
+	&__label {
+		font-size: 60px;
+		font-family: $italic-font;
+		font-style: italic;
+		color: #010100;
+		margin-bottom: 30px;
+	}
+	&__title {
+		font-family: 'lato_bold', Arial, sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	&__text {
+		font-size: 19px;
+		letter-spacing: 2.11;
+		margin-bottom: 40px;
+	}
+}
+
+.hello-banner {
+	max-width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 15px 15px 0 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	&-wrapper {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 1723px;
+		padding: 0px 150px ;
+		margin: 0 auto;
+	}
+}
