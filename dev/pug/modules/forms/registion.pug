@@ -1,0 +1,35 @@
+.registion
+	.registion__title Event Registion
+	form(action="").registion__form
+		.registion__row
+			.registion__item
+				label(for="name") Your Full Name
+				input(type='text' name="name" placeholder="Type Your Name")
+			.registion__item
+				label(for="email") Your Email Address
+				input(type='email' name="email" placeholder="Type Your Email")
+		.registion__row
+			.registion__item
+				label(for="country") Your Country
+				select(name="country")
+					option(value="Select Your Country")
+					option(value="Russia")
+					option(value="USA")
+					option(value="Germany")
+			.registion__item
+				label(for="city") Your City
+				select(name="city")
+					option(value="Select Your City")
+					option(value="Moskow")
+					option(value="St-Petersburg")
+					option(value="Tomsk")
+		.registion__row
+			.registion__item
+				label(for="street") Street Address
+				input(type='text' name="street" placeholder="Type Your Name")
+			.registion__item
+				label(for="adress") Your Email Address
+				input(type='text' name="adress" placeholder="Type Your Email")
+		button(type="submit").btn
+			span.btn__text submit
+			+icon('angle-right','btn__arrow')
