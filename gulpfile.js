@@ -19,7 +19,8 @@ $.gulp.task('dev', $.gulp.series(
         'pug',
         'fonts',
         'styles:dev',
-        'img:dev',
+		  'img:dev',
+		  'video:dev',
         'libsJS:dev',
         'js:dev',
         'svg'
@@ -32,7 +33,8 @@ $.gulp.task('build', $.gulp.series(
         'pug',
         'fonts',
         'styles:build',
-        'img:build',
+		  'img:build',
+		  'video:build',
         'libsJS:build',
         'js:build',
         'svg'
@@ -46,7 +48,8 @@ $.gulp.task('build-min', $.gulp.series(
         'pug',
         'fonts',
         'styles:build-min',
-        'img:build',
+		  'img:build',
+		  'video:build',
         'libsJS:build',
         'js:build-min',
         'svg'
@@ -60,3 +63,4 @@ $.gulp.task('default', $.gulp.series(
         'serve'
     )
 ));
+

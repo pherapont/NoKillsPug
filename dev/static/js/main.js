@@ -1,5 +1,11 @@
 $(document).ready(function () {
-    svg4everybody({});
+	 svg4everybody({});
+	 
+	 var magnificPopup = function() {
+		$('.video-popup-link').magnificPopup();
+	 }
+
+	 magnificPopup();
 });
 
 var swiper = new Swiper('.slaider-main', {

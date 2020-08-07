@@ -79,7 +79,16 @@ section { position: relative; }
 
 input,
 select,
-button { outline: none; }
+button {
+	outline: none;
+	padding: 0;
+}
+
+select { appearance: none; }
+
+label {
+	font-family: $main-font;
+}
 
 .wrapper {
   display: flex;

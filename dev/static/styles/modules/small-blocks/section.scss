@@ -1,0 +1,34 @@
+.s {
+	&-speakers {
+		padding: 210px 0px 110px;
+	}
+	&-header {
+		display: flex;
+		align-items: start;
+		margin-bottom: 55px;
+	}
+	&-title {
+		flex: 0 0 33.333%;
+		font-size: 36px;
+		position: relative;
+		padding: 0px 30px 17px 0px;
+		line-height: 1.2;
+		&::after {
+			content: '';
+			height: 3px;
+			width: 30px;
+			background-color: $base-text-color;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+	&-content {
+		flex: 0 0 66.666%;
+		line-height: 1.63;
+		color: $base-text-color;
+	}
+	&-body {
+		margin-bottom: 55px;
+	}
+}

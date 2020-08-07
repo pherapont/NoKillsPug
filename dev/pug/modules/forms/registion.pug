@@ -1,35 +1,36 @@
 .registion
 	.registion__title Event Registion
-	form(action="").registion__form
-		.registion__row
-			.registion__item
-				label(for="name") Your Full Name
-				input(type='text' name="name" placeholder="Type Your Name")
-			.registion__item
-				label(for="email") Your Email Address
-				input(type='email' name="email" placeholder="Type Your Email")
-		.registion__row
-			.registion__item
-				label(for="country") Your Country
-				select(name="country")
-					option(value="Select Your Country")
-					option(value="Russia")
-					option(value="USA")
-					option(value="Germany")
-			.registion__item
-				label(for="city") Your City
-				select(name="city")
-					option(value="Select Your City")
-					option(value="Moskow")
-					option(value="St-Petersburg")
-					option(value="Tomsk")
-		.registion__row
-			.registion__item
-				label(for="street") Street Address
-				input(type='text' name="street" placeholder="Type Your Name")
-			.registion__item
-				label(for="adress") Your Email Address
-				input(type='text' name="adress" placeholder="Type Your Email")
-		button(type="submit").btn
-			span.btn__text submit
-			+icon('angle-right','btn__arrow')
+	form(action="").registion-form
+		.registion-form__row
+			.registion-form__item
+				label(for="name").registion-form__label Your Full Name
+				input(type='text' name="name" id="name" placeholder="Type Your Name" required).registion-form__input
+			.registion-form__item
+				label(for="email").registion-form__label Your Email Address
+				input(type='email' name="email" id="email" placeholder="Type Your Email" required).registion-form__input
+		.registion-form__row
+			.registion-form__item
+				label(for="country").registion-form__label Your Country
+				select(name="country" id="country").registion-form__select
+					option(value="Select Your Country") Select Your Country
+					option(value="Russia") Russia
+					option(value="USA") USA
+					option(value="Germany") Germany
+			.registion-form__item
+				label(for="city" id="city").registion-form__label Your City
+				select(name="city" id="city").registion-form__select
+					option(value="Select Your City") Select Your City
+					option(value="Moskow") Moskow
+					option(value="St-Petersburg") St-Petersburg
+					option(value="Tomsk") Tomsk
+		.registion-form__row
+			.registion-form__item
+				label(for="street").registion-form__label Street Address
+				input(type='text' name="street" id="street" placeholder="Type Your Name").registion-form__input
+			.registion-form__item
+				label(for="adress").registion-form__label Your Email Address
+				input(type='text' name="adress" id="aderss" placeholder="Type Your Email").registion-form__input
+		.registion-form__row
+			button(type="submit").btn
+				span.btn__text submit
+				+icon('angle-right','btn__arrow')
