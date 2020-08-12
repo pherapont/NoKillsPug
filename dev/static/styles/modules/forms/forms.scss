@@ -1,4 +1,8 @@
 .registion {
+	position: absolute;
+	bottom: -100px;
+	left: 50%;
+	transform: translateX(-50%);
 	padding: 70px 44px;
 	background-color: $accent;
 	width: 762px;
