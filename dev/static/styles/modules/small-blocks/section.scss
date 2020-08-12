@@ -6,6 +6,10 @@
 	&-speakers {
 		padding: 210px 0px 110px;
 	}
+	&-adress {
+		background-color: #202020;
+	background: linear-gradient(to top, rgba(0,0,0,.75),rgba(0,0,0,.75)), url(../images/content/adress/bg-1.png) left bottom/60% auto no-repeat;
+	}
 	&-event {
 		position: relative;
 	}

@@ -134,4 +134,14 @@
 		margin: 20px auto
 	}
 }
+.socials {
+	display: flex;
+	& > * {
+	&:not(:last-child) { margin-right: 20px; }
+	}
+	&__icon {
+		@include size(20px);
+		fill: $accent;
+	}
+}
 
