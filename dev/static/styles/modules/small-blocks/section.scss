@@ -1,9 +1,22 @@
 .s {
+	
+	&-event {
+		position: relative;
+	}
 	&-speakers {
 		padding: 210px 0px 110px;
 	}
+<<<<<<< HEAD
 	&-event {
 		position: relative;
+=======
+	&-adress {
+		padding: 110px 0;
+		background: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 100%);
+		background-size: contain;
+		background-position: left center;
+		background-repeat: no-repeat;
+>>>>>>> 89db415f58c027efd0640b616d5a00a41e6bdcdf
 	}
 	&-header {
 		display: flex;
@@ -33,5 +46,17 @@
 	}
 	&-body {
 		margin-bottom: 55px;
+	}
+	&--dark {
+		background-color: $black;
+		color: $white;
+		.s-content {
+			color: $white;
+		}
+		.s-title {
+			&::after {
+				background-color: $white;
+			}
+		}
 	}
 }
